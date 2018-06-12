@@ -1,0 +1,129 @@
+@mixin flex($align: null, $justify: null, $size: null) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: $align;
+  justify-content: $justify;
+  flex: $size;
+}
+
+@mixin flex-size($flex: null) {
+  flex: $flex;
+}
+
+@mixin hidden() {
+  display: none;
+}
+
+@mixin overflow($x: null, $y: null) {
+  overflow-x: $x;
+  overflow-y: $y;
+}
+
+@mixin block() {
+  display: block;
+}
+
+@mixin static() {
+  position: static;
+}
+
+@mixin absolute($left: null, $top: null, $right: null, $bottom: null, $width: null) {
+  position: absolute;
+  left: $left;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  width: $width;
+}
+
+@mixin fixed($left: null, $top: null, $right: null, $bottom: null) {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: $left;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+}
+
+@mixin relative($index: null) {
+  position: relative;
+  z-index: $index;
+}
+
+@mixin pseudo($left: null, $top: null, $right: null, $bottom: null, $width: null, $height: null) {
+  content: '';
+  position: absolute;
+  left: $left;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  width: $width;
+  height: $height;
+}
+
+@mixin background($url: null, $position: null, $size: null, $color: null) {
+  background-image: url($url);
+  background-position: $position;
+  background-size: $size;
+  background-repeat: no-repeat;
+  background-color: $color;
+}
+
+@mixin inline-icon($width: null, $height: null) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+}
+
+@mixin font($size: null, $line-height: null, $transform: null, $align: null, $weight: null) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  text-transform: $transform;
+  text-align: $align;
+}
+
+@mixin color($color: null, $background: null) {
+  color: $color;
+  background-color: $background;
+}
+
+@mixin size($width: null, $height: null, $max-width: null, $max-height: null, $min-width: null, $min-height: null) {
+  width: $width;
+  height: $height;
+  max-width: $max-width;
+  max-height: $max-height;
+  min-width: $min-width;
+  min-height: $min-height;
+}
+
+@mixin space($margin: null, $padding: null) {
+  padding: $padding;
+  margin: $margin;
+}
+
+@mixin border($radius: null, $border: null) {
+  border: $border;
+  border-radius: $radius;
+}
+
+@mixin opacity($opacity: null) {
+  opacity: $opacity;
+}
+
+@mixin transition($transition: null) {
+  transition: $transition;
+}
+
+@mixin decoration($decoration: null) {
+  text-decoration: $decoration;
+}
+
+@mixin pointer-events($pointer-events: null) {
+  pointer-events: $pointer-events;
+}
+
+@mixin list-style-type($list-style-type: null) {
+  list-style-type: $list-style-type;
+}
