@@ -1,4 +1,4 @@
-# webpack-landing-config
+# Webpack Landing Config
 Landing page starter kit on webpack
 
 ## Описание сборки
